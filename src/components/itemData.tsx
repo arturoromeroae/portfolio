@@ -7,17 +7,20 @@ export const itemData = [
     {
         img: chaletinn,
         title: 'Chalet Inn',
-        author: 'Wordpress'
+        author: 'Wordpress',
+        id: 'pr1'
     },
     {
         img: cursossevim,
         title: 'Cursos Sevim',
-        author: 'Wordpress'
+        author: 'Wordpress',
+        id: 'pr2'
     },
     {
         img: noarg,
         title: 'Importaciones Noarg',
-        author: 'Laravel'
+        author: 'Laravel',
+        id: 'pr3'
     },
     {
         img: codingicon,

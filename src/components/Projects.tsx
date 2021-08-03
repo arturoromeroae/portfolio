@@ -39,7 +39,7 @@ export const Projects = () => {
           </ImageListItem>
           {itemData.map((item) => (
             <ImageListItem key={item.img}>
-              <img src={item.img} alt={item.title} />
+              <img id={item.id} src={item.img} alt={item.title} />
               <ImageListItemBar
                 title={item.title}
                 subtitle={<span>created with: {item.author}</span>}
