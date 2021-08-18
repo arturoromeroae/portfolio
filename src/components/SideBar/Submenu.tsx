@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FC } from "react";
+import { FC, useState } from "react";
 import styled from "styled-components";
 import { SidebarItem } from "../../models/SidebarItem";
 
@@ -18,9 +18,10 @@ const SidebarLink = styled(Link)`
     color: #ffff;
 
     &:hover{
-        background-color: gray;
+        background-color: #1f1f1b;
+        border-left: 15px groove #6d44dc;
         color: white;
-        transition: 0.2s ease-in-out;
+        transition: 350ms;
     }
 `
 
@@ -29,12 +30,16 @@ const SidebarLabel = styled.span`
 `;
 
 const Submenu: FC<SidebarLinkProps> = ({ item }) => {
+
+    const [sidebar, setSidebar] = useState(false);
+    const showSidebar = () => setSidebar(!sidebar);
+
     return (
         <>
             <SidebarLink to={item.path}>
                 <div>
                     {item.icon}
-                    <SidebarLabel>{item.title}</SidebarLabel>
+                    <SidebarLabel onClick={showSidebar}>{item.title}</SidebarLabel>
                 </div>
             </SidebarLink>
         </>
