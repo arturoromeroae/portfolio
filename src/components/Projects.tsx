@@ -21,8 +21,12 @@ const useStyles = makeStyles((theme: Theme) =>
       height: 'auto',
     },
     icon: {
-      color: 'rgba(205, 205, 25, 0.54)',
+      color: '#6b4aff',
     },
+    backgroundDark: {
+      backgroundColor: '#3f3d56',
+      marginTop: '30px'
+    }
   }),
 );
 
@@ -30,19 +34,19 @@ export const Projects = () => {
   const classes = useStyles();
 
   return (
-    <div className="mt-5 bg-info">
-      <h1 className="display-1 text-center text-white">Projects</h1>
+    <div id="divProjects" className={classes.backgroundDark}>
+      <h1 className="display-1 text-center text-white">Proyectos Ejecutados</h1>
       <div className={classes.root}>
-        <ImageList rowHeight={350} className={classes.imageList}>
+        <ImageList id="divProjectsList" rowHeight={350} className={classes.imageList}>
           <ImageListItem key="Subheader" cols={2} style={{ height: 'auto' }}>
             <ListSubheader component="div" style={{ color: 'white' }}></ListSubheader>
           </ImageListItem>
           {itemData.map((item) => (
-            <ImageListItem key={item.img}>
+            <ImageListItem className="listProject" key={item.img}>
               <img id={item.id} src={item.img} alt={item.title} />
               <ImageListItemBar
                 title={item.title}
-                subtitle={<span>created with: {item.author}</span>}
+                subtitle={<span>Hecho con: {item.author}</span>}
                 actionIcon={
                   <IconButton aria-label={`info about ${item.title}`} className={classes.icon}>
                     <InfoIcon />

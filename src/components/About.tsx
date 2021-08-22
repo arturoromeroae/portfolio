@@ -1,4 +1,4 @@
-import arturo from '../images/arturo.jpg';
+import arturo from '../images/arturo_new.png';
 import { Icons } from './Icons';
 import flatdesign from '../images/binary.png'
 
@@ -8,18 +8,23 @@ export const About = () => {
         backgroundImage: 'url(' + flatdesign + ')',
         backgroundPosition: 'right',
         backgroundRepeat: 'no-repeat',
-        backgroundSize: '1000px'
+        backgroundSize: '900px'
+    }
+
+    const styleDivImage = {
+        marginLeft: '-100px',
+        marginTop: '100px'
     }
 
     return (
-        <div className="container mt-3 p-5" style={styleDiv}>
-            <div className="row">
-                <div className="col-4 mt-5">
-                    <img className="rounded-pill mt-5" src={arturo} alt="" width="300" />
+        <div id="divAbout" className="container mt-3 p-5" style={styleDiv}>
+            <div id="divRow" className="row">
+                <div id="divAuthor" style={styleDivImage} className="col-6">
+                    <img id="imageAuthor" className="rounded-pill mt-5" src={arturo} alt="" width="600" />
                 </div>
-                <div className="col-6 mt-3 mb-5">
-                    <h3 className="display-3 text-dark">Arturo Romero</h3>
-                    <p className="text-dark text-justify">
+                <div id="divContent" className="col-6 mt-3 mb-5">
+                    <h3 className="textMobile display-3 text-dark titleMobile">Sobre mi</h3>
+                    <p className="textMobile text-dark text-justify">
                         Interesado en todo lo referente a tecnologías de la información. 
                         Poseo habilidades matemáticas y conocimiento en distintos sistemas 
                         operativos: Linux, Ubuntu, Windows, MacOS y lenguajes como: Python, 

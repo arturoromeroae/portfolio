@@ -30,72 +30,72 @@ export const Icons = () => {
         <div className="container">
             <div className="row mt-2">
                 <div className="col text-center">
-                    <SiPhp style={styleIcons} />
-                    <h6 className="text-dark">PHP</h6>
+                    <SiPhp className="textMobile" style={styleIcons} />
+                    <h6 className="textMobile text-dark">PHP</h6>
                 </div>
                 <div className="col text-center mt-3">
-                    <SiPython style={stylePython} />
-                    <h6 className="text-dark">Python</h6>
+                    <SiPython className="textMobile" style={stylePython} />
+                    <h6 className="textMobile text-dark">Python</h6>
                 </div>
                 <div className="col text-center mt-3">
-                    <SiJavascript style={stylePython} />
-                    <h6 className="text-dark">JavaScript</h6>
+                    <SiJavascript className="textMobile" style={stylePython} />
+                    <h6 className="textMobile text-dark">JavaScript</h6>
                 </div>
                 <div className="col text-center mt-3">
-                    <SiHtml5 style={stylePython} />
-                    <h6 className="text-dark">HTML5</h6>
+                    <SiHtml5 className="textMobile" style={stylePython} />
+                    <h6 className="textMobile text-dark">HTML5</h6>
                 </div>
                 <div className="col text-center mt-3">
-                    <SiCss3 style={stylePython} />
-                    <h6 className="text-dark">CSS</h6>
+                    <SiCss3 className="textMobile" style={stylePython} />
+                    <h6 className="textMobile text-dark">CSS</h6>
                 </div>
                 <div className="col text-center mt-3">
-                    <SiWordpress style={stylePython} />
-                    <h6 className="text-dark">Wordpress</h6>
+                    <SiWordpress className="textMobile" style={stylePython} />
+                    <h6 className="textMobile text-dark">Wordpress</h6>
                 </div>
                 <div className="col text-center mt-3">
-                    <SiJquery style={stylePython} />
-                    <h6 className="text-dark">jQuery</h6>
+                    <SiJquery className="textMobile" style={stylePython} />
+                    <h6 className="textMobile text-dark">jQuery</h6>
                 </div>
                 <div className="col text-center mt-3">
-                    <SiBootstrap style={stylePython} />
-                    <h6 className="text-dark">Bootstrap</h6>
+                    <SiBootstrap className="textMobile" style={stylePython} />
+                    <h6 className="textMobile text-dark">Bootstrap</h6>
                 </div>
                 <div className="col text-center mt-3">
-                    <SiLaravel style={stylePython} />
-                    <h6 className="text-dark">Laravel</h6>
+                    <SiLaravel className="textMobile" style={stylePython} />
+                    <h6 className="textMobile text-dark">Laravel</h6>
                 </div>
                 <div className="col text-center mt-3">
-                    <SiReact style={stylePython} />
-                    <h6 className="text-dark">React</h6>
+                    <SiReact className="textMobile" style={stylePython} />
+                    <h6 className="textMobile text-dark">React</h6>
                 </div>
                 <div className="col text-center mt-3">
-                    <SiAngular style={stylePython} />
-                    <h6 className="text-dark">Angular</h6>
+                    <SiAngular className="textMobile" style={stylePython} />
+                    <h6 className="textMobile text-dark">Angular</h6>
                 </div>
                 <div className="col text-center mt-3">
-                    <SiFlask style={stylePython} />
-                    <h6 className="text-dark">Flask</h6>
+                    <SiFlask className="textMobile" style={stylePython} />
+                    <h6 className="textMobile text-dark">Flask</h6>
                 </div>
                 <div className="col text-center mt-3">
-                    <SiDjango style={stylePython} />
-                    <h6 className="text-dark">Django</h6>
+                    <SiDjango className="textMobile" style={stylePython} />
+                    <h6 className="textMobile text-dark">Django</h6>
                 </div>
                 <div className="col text-center mt-3">
-                    <SiGithub style={stylePython} />
-                    <h6 className="text-dark">Github</h6>
+                    <SiGithub className="textMobile" style={stylePython} />
+                    <h6 className="textMobile text-dark">Github</h6>
                 </div>
                 <div className="col text-center mt-3">
-                    <GrMysql style={stylePython} />
-                    <h6 className="text-dark">Mysql</h6>
+                    <GrMysql className="textMobile" style={stylePython} />
+                    <h6 className="textMobile text-dark">Mysql</h6>
                 </div>
                 <div className="col text-center mt-3">
-                    <SiPostgresql style={stylePython} />
-                    <h6 className="text-dark">Postgresql</h6>
+                    <SiPostgresql className="textMobile" style={stylePython} />
+                    <h6 className="textMobile text-dark">Postgresql</h6>
                 </div>
                 <div className="col text-center mt-3">
-                    <SiMongodb style={stylePython} />
-                    <h6 className="text-dark">Mongodb</h6>
+                    <SiMongodb className="textMobile" style={stylePython} />
+                    <h6 className="textMobile text-dark">Mongodb</h6>
                 </div>
             </div>
         </div>

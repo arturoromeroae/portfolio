@@ -22,7 +22,7 @@ export const Slider = () => {
 
     return (
         <div className="d-flex" style={style}>
-            <div className="text-center">
+            <div className="text-center" id="imageLeft">
                 <div style={styleScroll}>
                     <Lottie config={{
                         animationData: scrollData,
@@ -32,7 +32,14 @@ export const Slider = () => {
                 </div>
                 <img src={lost} className="p-5" width="700" alt="person walking" />
             </div>
-            <div className="p-3 rounded" style={styleName}>
+            <div id="nameDiv" className="p-3 rounded" style={styleName}>
+                <div id="scrollIconMobile" style={styleScroll}>
+                    <Lottie config={{
+                        animationData: scrollData,
+                        loop: true,
+                        renderer: 'svg'
+                    }}></Lottie>
+                </div>
                 <p className="display-1 font-monospace text-center text-white mt-5">Arturo Romero</p>
                 <div style={styleTextAnimation}>
                     <ReactTypical

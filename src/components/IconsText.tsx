@@ -11,7 +11,7 @@ export const IconsText = () => {
 
     return (
         <div className="container mb-5">
-            <div className="row mt-5">
+            <div className="row mt-5 iconsDesign">
                 <div className="col text-center">
                     <div>
                         <Lottie config={{
@@ -22,7 +22,7 @@ export const IconsText = () => {
                     </div>
                     <h4 className="display-6" style={styleText}>Creo proyectos desde 0</h4>
                 </div>
-                <div className="col text-center mx-5">
+                <div className="col text-center mx-5 iconsDesign">
                     <div>
                         <Lottie config={{
                             animationData: designData,
@@ -32,7 +32,7 @@ export const IconsText = () => {
                     </div>
                     <h4 className="display-6" style={styleText}>Diseños a medida</h4>
                 </div>
-                <div className="col text-center">
+                <div className="col text-center iconsDesign">
                     <div>
                         <Lottie config={{
                             animationData: serverData,

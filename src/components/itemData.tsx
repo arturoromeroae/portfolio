@@ -1,7 +1,7 @@
-import codingicon from '../images/iconcoding.svg';
 import chaletinn from '../images/chaletinn.png'
 import cursossevim from '../images/cursossevim.png'
 import noarg from '../images/noarg.png'
+import portfolio from '../images/portafolio.png'
 
 export const itemData = [
     {
@@ -23,18 +23,9 @@ export const itemData = [
         id: 'pr3'
     },
     {
-        img: codingicon,
-        title: 'Image',
-        author: 'author'
-    },
-    {
-        img: codingicon,
-        title: 'Image',
-        author: 'author'
-    },
-    {
-        img: codingicon,
-        title: 'Image',
-        author: 'author'
+        img: portfolio,
+        title: 'Portafolio',
+        author: 'React',
+        id: 'pr4'
     }
 ];
