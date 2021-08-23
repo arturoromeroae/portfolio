@@ -9,7 +9,6 @@ import Overview from './pages/overview';
 import { FC } from 'react';
 
 const App: FC = () => {
-
   return (
     <Router>
       <Sidebar />
