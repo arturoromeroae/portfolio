@@ -20,7 +20,7 @@ export const IconsText = () => {
                             renderer: 'svg'
                         }}></Lottie>
                     </div>
-                    <h4 className="display-6" style={styleText}>Creo proyectos desde 0</h4>
+                    <h4 className="titleIcons display-6" style={styleText}>Creo proyectos desde 0</h4>
                 </div>
                 <div className="col text-center mx-5 iconsDesign">
                     <div>
@@ -30,7 +30,7 @@ export const IconsText = () => {
                             renderer: 'svg'
                         }}></Lottie>
                     </div>
-                    <h4 className="display-6" style={styleText}>Diseños a medida</h4>
+                    <h4 className="titleIcons display-6" style={styleText}>Diseños a medida</h4>
                 </div>
                 <div className="col text-center iconsDesign">
                     <div>
@@ -40,7 +40,7 @@ export const IconsText = () => {
                             renderer: 'svg'
                         }}></Lottie>
                     </div>
-                    <h4 className="display-6" style={styleText}>Hosting, bases de datos y más.</h4>
+                    <h4 className="titleIcons display-6" style={styleText}>Hosting, bases de datos y más.</h4>
                 </div>
             </div>
         </div>

@@ -1,6 +1,7 @@
 import arturo from '../images/arturo_new.png';
 import { Icons } from './Icons';
 import flatdesign from '../images/binary.png'
+import { SiLinkedin } from 'react-icons/si';
 
 export const About = () => {
     const styleDiv = {
@@ -21,6 +22,12 @@ export const About = () => {
             <div id="divRow" className="row">
                 <div id="divAuthor" style={styleDivImage} className="col-6">
                     <img id="imageAuthor" className="rounded-pill mt-5" src={arturo} alt="" width="600" />
+                    <div id="linkIn">
+                        Visítame en:
+                        <a href="https://www.linkedin.com/in/arturo-romero-b01b641a7/" target="_blank" rel="noreferrer">
+                            <SiLinkedin id="linkedin"/>
+                        </a>
+                    </div>
                 </div>
                 <div id="divContent" className="col-6 mt-3 mb-5">
                     <h3 className="textMobile display-3 text-dark titleMobile">Sobre mi</h3>

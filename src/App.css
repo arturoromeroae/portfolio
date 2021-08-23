@@ -20,6 +20,94 @@ html, body{
     display: none;
 }
 
+#linkedin{
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+#linkedin:hover{
+    opacity: 0.5 !important;
+}
+
+#linkIn{
+    color: black;
+    text-decoration: none;
+    margin-top: -150px !important;
+    margin-left: 200px;
+    padding: 10px;
+}
+
+#divAbout{
+    margin-top: 0px !important;
+    width: 100%;
+    background-size: 80% 120% !important;
+}
+
+@media only screen and (max-width: 900px) {
+    #imageLeft {
+        display: none;
+    }
+
+    #nameDiv{
+        width: 100%;
+        display: block;
+    }
+
+    #scrollIconMobile{
+        display: block;
+        margin-bottom: -40px;
+    }
+
+    #divAbout{
+        margin-top: -60px !important;
+        width: 100%;
+        background-size: 105% 150% !important;
+    }
+
+    #divRow{
+        display: flex;
+    }
+
+    #imageAuthor{
+        width: 100%;
+        margin-top: -30% !important;
+        margin-left: 90%;
+    }
+
+    #linkIn{
+        text-decoration: none;
+        margin-top: -280px !important;
+        margin-left: 350px !important;
+        padding: 10px;
+        width: 100% !important;
+        margin-bottom: 140px;
+    }
+
+    #divContent{
+        margin-top: -200px;
+        width: 100%;
+        padding-inline: 10%;
+        margin-bottom: -10px !important;
+    }
+
+    #linkedin{
+        color: black;
+    }
+
+    .titleMobile{
+        text-align: center;
+    }
+
+    .titleIcons{
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+
+    #divProjects{
+        margin-top: -10px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     #imageLeft {
         display: none;
@@ -46,6 +134,7 @@ html, body{
         width: 100%;
         background-size: 0% !important;
         background-color: #6b4aff;
+        margin-top: 0px !important;
     }
 
     #divRow{
@@ -54,13 +143,15 @@ html, body{
 
     #divAuthor{
         width: 100%;
-        margin-top: 0 !important;
+        margin-top: 80px !important;
         margin-left: 0px !important;
         margin-bottom: -70px !important;
     }
 
     #imageAuthor{
         width: 100%;
+        margin-left: 0px;
+        margin: 0px;
     }
 
     #divContent{
@@ -91,5 +182,26 @@ html, body{
 
     .MuiImageListItem-item{
         border-radius: 10px;
+    }
+
+    #divContent{
+        margin-top: -200px;
+        width: 100%;
+        padding-inline: 0%;
+        margin-bottom: -10px !important;
+    }
+
+    #linkIn{
+        text-decoration: none;
+        margin-top: -240px !important;
+        margin-left: 80px !important;
+        padding: 10px;
+        width: 100% !important;
+        margin-bottom: 120px;
+    }
+
+    .titleIcons{
+        font-size: 30px;
+        margin-bottom: 50px;
     }
 }
