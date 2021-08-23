@@ -24,7 +24,12 @@ const steps = [
   {
     id: 'user-response-yes',
     message: 'Grandioso! Dejame tu mensaje y tu contacto y te escribire lo antes posible',
-    end: true
+    trigger:'intro-user',
+  },
+  {
+    id: 'intro-user',
+    user: true,
+    end: true,
   },
   {
     id: 'user-response-no',
