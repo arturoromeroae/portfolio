@@ -3,6 +3,16 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import ChatBot from 'react-simple-chatbot';
 
+function GoToEmail(){
+  window.open('mailto:arturo@arturoromero.online', "_blank");
+  return <p>Gracias por contactarme! 👏</p>
+}
+
+function GoToLinked(){
+  window.open('https://www.linkedin.com/in/arturo-romero-b01b641a7/', "_blank");
+  return <p>Gracias por contactarme! 👏</p>
+}
+
 const styleLink = {
   color: 'black'
 }
@@ -42,42 +52,26 @@ const steps = [
   },
   {
     id: 'question-2',
-    message: 'Podrias dejarme tu email?',
-    trigger: 'email'
+    message: 'Selecciona como deseas contactarme',
+    trigger: 'question-3'
   },
   {
-    id: 'email',
-    user: true,
-    validator: (value) => {
-      if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value))
-        {
-          return true;
-        }
-      else
-        {
-          return'Por favor ingresa un email válido.';
-        }
-    },
-    trigger: 'question-3',
+  id: 'question-3',
+  options: [
+    {value: 'email', label: 'Email 📧', trigger: 'user-response-email'},
+    {value: 'linked', label: 'LinkedIn 💼', trigger: 'user-response-linked'}
+  ]
   },
   {
-    id: 'question-3',
-    message: 'Gracias! 😁 Ahora, podrias dejarme tu mensaje?',
-    trigger: 'user-response-3'
+    id: 'user-response-email',
+    component: <GoToEmail />,
+    asMessage: true,
+    end: true
   },
   {
-    id: 'user-response-3',
-    user: true,
-    trigger: 'question-4',
-  },
-  {
-    id: 'question-4',
-    message: 'Gracias por tu mensaje! 🥳 Me pondre en contacto contigo!',
-    trigger: 'question-5'
-  },
-  {
-    id: 'question-5',
-    message: 'Adios! 🙋‍♂️',
+    id: 'user-response-linked',
+    component: <GoToLinked />,
+    asMessage: true,
     end: true
   },
   {
@@ -88,7 +82,7 @@ const steps = [
   {
     id: 'my-social',
     component: (
-      <div>Te dejo mis redes sociales por si cambias de opinion <a href="https://www.linkedin.com/in/arturo-romero-b01b641a7/" target="_blank" rel="noreferrer" style={styleLink}>LinkedIn</a></div>
+      <div>Te dejo mis redes sociales por si cambias de opinion <a href="https://www.linkedin.com/in/arturo-romero-b01b641a7/" target="_blank" rel="noreferrer" style={styleLink}>LinkedIn 💼</a><br></br><a href="mailto:arturo@arturoromero.online" target="_blank" rel="noreferrer" style={styleLink}>Email 📧</a></div>
     ),
     asMessage: true,
     end: true
