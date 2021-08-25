@@ -2,6 +2,7 @@ import arturo from '../images/arturo_new.png';
 import { Icons } from './Icons';
 import flatdesign from '../images/binary.png'
 import { SiLinkedin } from 'react-icons/si';
+import LazyLoad from 'react-lazy-load';
 
 export const About = () => {
     const styleDiv = {
@@ -21,7 +22,9 @@ export const About = () => {
         <div id="divAbout" className="container mt-3 p-5" style={styleDiv}>
             <div id="divRow" className="row">
                 <div id="divAuthor" style={styleDivImage} className="col-6">
+                <LazyLoad>
                     <img id="imageAuthor" className="rounded-pill mt-5" src={arturo} alt="" width="600" />
+                </LazyLoad>
                     <div id="linkIn">
                         Visítame en:
                         <a href="https://www.linkedin.com/in/arturo-romero-b01b641a7/" target="_blank" rel="noreferrer">

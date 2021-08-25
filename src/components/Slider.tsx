@@ -3,6 +3,7 @@ import scrollData from '../images/scrolldown.json';
 import { ReactTypical } from '@deadcoder0904/react-typical';
 import { Lottie } from '@crello/react-lottie'
 import teamData from '../images/team.json';
+import LazyLoad from 'react-lazy-load';
 
 export const Slider = () => {
     const style = {
@@ -30,7 +31,9 @@ export const Slider = () => {
                         renderer: 'svg'
                     }}></Lottie>
                 </div>
-                <img src={lost} className="p-5" width="700" alt="person walking" />
+                <LazyLoad>
+                    <img src={lost} className="p-5" width="700" alt="person walking" />
+                </LazyLoad>
             </div>
             <div id="nameDiv" className="p-3 rounded" style={styleName}>
                 <div id="scrollIconMobile" style={styleScroll}>

@@ -6,6 +6,7 @@ import ListSubheader from '@material-ui/core/ListSubheader';
 import IconButton from '@material-ui/core/IconButton';
 import InfoIcon from '@material-ui/icons/Info.js';
 import { itemData } from './itemData';
+import LazyLoad from 'react-lazy-load';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -43,7 +44,9 @@ export const Projects = () => {
           </ImageListItem>
           {itemData.map((item) => (
             <ImageListItem className="listProject" key={item.img}>
-              <img id={item.id} src={item.img} alt={item.title} />
+              <LazyLoad>
+                <img id={item.id} src={item.img} alt={item.title} />
+              </LazyLoad>
               <ImageListItemBar
                 title={item.title}
                 subtitle={<span>Hecho con: {item.author}</span>}
