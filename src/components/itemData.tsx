@@ -1,7 +1,8 @@
-import chaletinn from '../images/chaletinn.png'
-import cursossevim from '../images/cursossevim.png'
-import noarg from '../images/noarg.png'
-import portfolio from '../images/portafolio.png'
+import chaletinn from '../images/chaletinn.png';
+import cursossevim from '../images/cursossevim.png';
+import noarg from '../images/noarg.png';
+import portfolio from '../images/portafolio.png';
+import todo from '../images/todo_app.jpg';
 
 export const itemData = [
     {
@@ -27,5 +28,11 @@ export const itemData = [
         title: 'Portafolio',
         author: 'React',
         id: 'pr4'
+    },
+    {
+        img: todo,
+        title: 'Todo App',
+        author: 'React',
+        id: 'pr5'
     }
 ];
