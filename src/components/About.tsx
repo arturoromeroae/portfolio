@@ -3,6 +3,7 @@ import { Icons } from './Icons';
 import flatdesign from '../images/binary.png'
 import { SiLinkedin } from 'react-icons/si';
 import LazyLoad from 'react-lazy-load';
+import React from 'react';
 
 export const About = () => {
     const styleDiv = {

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { FC, useState } from "react";
 import styled from "styled-components";
 import { SidebarItem } from "../../models/SidebarItem";
+import React from 'react';
 
 type SidebarLinkProps = {
     item: SidebarItem;

@@ -6,6 +6,7 @@ import { IoMenu, IoClose } from 'react-icons/io5'
 import { useState } from 'react';
 import { SidebarData } from './SidebarData';
 import Submenu from './Submenu';
+import React from 'react';
 
 const Nav = styled.div`
     display: flex;

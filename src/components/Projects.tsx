@@ -7,6 +7,7 @@ import IconButton from '@material-ui/core/IconButton';
 import InfoIcon from '@material-ui/icons/Info.js';
 import { itemData } from './itemData';
 import LazyLoad from 'react-lazy-load';
+import React from 'react';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({

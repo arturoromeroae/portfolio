@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Sidebar from './components/SideBar/Sidebar';
 import Overview from './pages/overview';
 import { FC } from 'react';
+import React from 'react';
 
 const App: FC = () => {
   return (

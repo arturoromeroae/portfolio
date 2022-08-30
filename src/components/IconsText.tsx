@@ -2,6 +2,7 @@ import { Lottie } from '@crello/react-lottie'
 import codeData from '../images/codeanimation.json';
 import designData from '../images/webdesigneranimation.json';
 import serverData from '../images/server.json';
+import React from 'react';
 
 export const IconsText = () => {
     const styleText = {

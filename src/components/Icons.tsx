@@ -15,6 +15,7 @@ import { SiGithub } from 'react-icons/si';
 import { GrMysql } from 'react-icons/gr';
 import { SiPostgresql } from 'react-icons/si';
 import { SiMongodb } from 'react-icons/si';
+import React from 'react';
 
 export const Icons = () => {
     const styleIcons = {

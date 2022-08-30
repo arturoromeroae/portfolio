@@ -4,6 +4,7 @@ import { ReactTypical } from '@deadcoder0904/react-typical';
 import { Lottie } from '@crello/react-lottie'
 import teamData from '../images/team.json';
 import LazyLoad from 'react-lazy-load';
+import React from 'react';
 
 export const Slider = () => {
     const style = {
