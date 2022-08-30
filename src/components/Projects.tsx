@@ -52,7 +52,7 @@ export const Projects = () => {
                 title={item.title}
                 subtitle={<span>Hecho con: {item.author}</span>}
                 actionIcon={
-                  <IconButton aria-label={`info about ${item.title}`} className={classes.icon}>
+                  <IconButton target="_blank" href={item.link} aria-label={`info about ${item.title}`} className={classes.icon}>
                     <InfoIcon />
                   </IconButton>
                 }

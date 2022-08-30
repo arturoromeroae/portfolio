@@ -9,30 +9,35 @@ export const itemData = [
         img: chaletinn,
         title: 'Chalet Inn',
         author: 'Wordpress',
-        id: 'pr1'
+        id: 'pr1',
+        link: 'https://chaletinngatlinburg.com/'
     },
     {
         img: cursossevim,
         title: 'Cursos Sevim',
         author: 'Wordpress',
-        id: 'pr2'
+        id: 'pr2',
+        link: ''
     },
     {
         img: noarg,
         title: 'Importaciones Noarg',
         author: 'Laravel',
-        id: 'pr3'
+        id: 'pr3',
+        link: ''
     },
     {
         img: portfolio,
         title: 'Portafolio',
         author: 'React',
-        id: 'pr4'
+        id: 'pr4',
+        link: 'https://arturoromeroae.github.io/portfolio/'
     },
     {
         img: todo,
         title: 'Todo App',
         author: 'React',
-        id: 'pr5'
+        id: 'pr5',
+        link: 'https://arturoromeroae.github.io/TodoAppReact/'
     }
 ];
