@@ -1,5 +1,7 @@
 # Portfolio Arturo Romero
 
+Project developed with TS 🔣.
+
 ## Available Scripts
 
 In the project directory, you can run:
