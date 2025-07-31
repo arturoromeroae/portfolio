@@ -41,6 +41,11 @@ html, body{
     background-size: 80% 120% !important;
 }
 
+a.linkTitle {
+    font-size: 25px !important;
+    color: white !important;
+}
+
 @media only screen and (max-width: 900px) {
     #imageLeft {
         display: none;

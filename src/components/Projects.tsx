@@ -49,7 +49,7 @@ export const Projects = () => {
                 <img id={item.id} src={item.img} alt={item.title} />
               </LazyLoad>
               <ImageListItemBar
-                title={item.title}
+                title={<a className='linkTitle' href={item.link}>{item.title}</a>}
                 subtitle={<span>Hecho con: {item.author}</span>}
                 actionIcon={
                   <IconButton target="_blank" href={item.link} aria-label={`info about ${item.title}`} className={classes.icon}>

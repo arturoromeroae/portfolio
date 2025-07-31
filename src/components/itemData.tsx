@@ -3,6 +3,7 @@ import cursossevim from '../images/cursossevim.png';
 import noarg from '../images/noarg.png';
 import portfolio from '../images/portafolio.png';
 import todo from '../images/todo_app.jpg';
+import desafio from '../images/desafio.png';
 
 export const itemData = [
     {
@@ -39,5 +40,12 @@ export const itemData = [
         author: 'React',
         id: 'pr5',
         link: 'https://arturoromeroae.github.io/TodoAppReact/'
+    },
+    {
+        img: desafio,
+        title: 'Landing page Universidad Continental',
+        author: 'WordPress',
+        id: 'pr6',
+        link: 'https://innovative.ucontinental.edu.pe/desafiocontinental/'
     }
 ];
